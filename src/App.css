@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: "Poppins", serif;
+}
+header ul li{
+    @apply px-2
+}
+
+.bg-primary{
+    background:#036755;
+}
+
+.bg-secondary{
+    background:  #024337;
+}
+
+.mobile-nav{
+    @apply fixed top-10 left-0 bg-gray-500 w-full h-1/4;
+}
+
+.mobile-nav li{
+    @apply w-full h-full text-center border-b-2 ;
+}
+
+.project-desc{
+    @apply absolute left-0 right-0 bottom-[0px] top-0 bg-secondary opacity-0 duration-500 hover:opacity-100;
+
+}
+
+.btn{
+    @apply bg-primary hover:border-2 font-bold px-1 py-1 bg-white ;
+}
+
+html{
+    scroll-behavior: smooth;
+}
